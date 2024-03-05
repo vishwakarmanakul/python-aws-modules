@@ -12,4 +12,4 @@ if __name__ == "__main__":
     if (makeString(s1,s2)==True):
         print("possible")
     else:
-        print("not possible")
+        print("It is not possible")
