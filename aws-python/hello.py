@@ -1,7 +1,5 @@
-import  requests
-import json
-url= 'http://127.0.0.1:8000/student/1'
-r= requests.get(url)
-print(r)
-json_data= r.json()
-print(json_data)
+import boto3
+aws_managemebt_console= boto3.session.Session(profile_name='default')
+aws_console= aws_managemebt_console.resource('iam')
+for each_user in aws_console.users.all():
+    print(each_user.name)
