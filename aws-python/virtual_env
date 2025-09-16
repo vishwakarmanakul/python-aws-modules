@@ -1,0 +1,6 @@
+python --version
+python3 --version
+sudo apt install python3-venv
+python -m venv env_name
+source env_name/bin/activate
+
